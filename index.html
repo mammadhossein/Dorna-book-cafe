@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <title>کافه کتاب درنا | منو و سفارش آنلاین</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Coffee Shop">
+  <meta name="description" content="Discover our cafe & restaurant menu with fresh coffee, delicious meals, online ordering, and table reservations in a cozy atmosphere.">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/WebP" href="assets/logo.WebP"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="hero-section">
+    <nav aria-label="Primary">
+      <!-- <div class="logo">
+        <img src="assets/logo.webp" alt="کافه کتاب درنا">
+      </div> -->
+      <ul>
+        <li><a href="#menu">منو</a></li>
+        <li><a href="#contact">ارتباط با ما</a></li>
+        <li class="cart-nav">
+          <button id="cart-toggle" aria-expanded="false" aria-controls="cart-panel" title="Open cart">
+            <i class="fal fa-shopping-cart cart" aria-hidden="true"></i>
+            <span class="cart-count" aria-live="polite">0</span>
+          </button>
+          <div class="cart-dropdown" id="cart-panel" role="dialog" aria-label="Shopping Cart">
+            <h4>سبد خرید</h4>
+            <ul class="cart-list"></ul>
+            <p class="cart-empty">سبدخرید شما خالی می باشد</p>
+            <div class="cart-total">جمع کل: 0.00</div>
+            <div class="cart-actions">
+              <button class="cart-clear" aria-label="Clear cart">حذف سبد خرید</button>
+              <button class="cart-checkout" aria-label="Checkout">ثبت سفارش </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero-text">
+      <h1>ترا باد از پاک یزدان درود</h1>
+      <p>در مجموعه کافه کتاب درنا در تلاشیم تا لحظات و خاطراتی زیبا و طعمی ماندگار را برای شما رقم بزنیم</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+    <main>
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <h2 class="animate-on-scroll">منو</h2>
+
+            <!-- Filters -->
+            <div class="menu-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">منوی کلی</button>
+                <button class="filter-btn" data-filter="coffee">منوامروزی</button>
+                <button class="filter-btn" data-filter="breakfast">منو دیروزی</button>
+                <button class="filter-btn" data-filter="restaurant">سردنوش ها</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/double-espresso.WebP" alt="Double espresso" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>اسپرسو دبل</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">136000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/americano.webp" loading="lazy"
+                        decoding="async" alt="specialty espresso" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>امریکانو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">155000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/cortado.webp" loading="lazy"
+                            decoding="async" alt="Caramel Latte" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کورتادو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">155000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/cappuccino.WebP" alt="cappuccino" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کاپوچینو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">176000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/iced-latte.WebP" alt="Hot chocolate" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3> لاته</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">195000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/caramelma.webp" alt="White chocolate" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کارامل ماکیاتو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/Mocha.WebP" alt="Pink chocolate" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>موکا</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/mochawithcream.webp" alt="Nutella Milk" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>موکا با خامه</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/hotchocolate.webp" alt="Matcha Latte" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>هات چاکلت</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">225000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/friutechocolate.webp" alt="Chai Latte" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>هات چاکلت میوه ای</h3>
+                        <p>موز / توت فرنگی / انبه</p>
+                        <div class="menu-item-footer">
+                            <span class="price">251000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/nutshake.webp" alt="Chamomile" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>هات چاکلت آجیلی</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">251000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/icecoffe.webp" alt="Blueberry Muffin" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس کافی</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">136000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/Iced-Americano.WebP" alt="Masala Tea" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس امریکانو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">155000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/iced-latte.WebP" alt="Turkish Coffee" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس لاته</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">195000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/cocunatmilkshake.webp" alt="Spirulina" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس لاته با شیرنارگیل</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/icemocha.webp" alt="Iced Americano" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس موکا</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/icecoffe.webp" alt="Iced Latte" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیس چاکلت</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">217000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/coffee-frappe.WebP" alt="Strawberry Frappe" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>فراپاچینو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">217000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/ofogato.webp" alt="Green tea" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آفاگاتو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">195000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/ofochocolate.webp" alt="Turkish Coffee" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آفاچاکلت</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">247000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/tonic.webp" alt="Coffee Frappe" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>تونیک</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">201000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/turkish-coffee.webp" alt="Earl Grey" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>قهوه ترک</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">158000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/carrot.webp" alt="Croissant" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کیک هویج</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">238000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/pumpin.webp" alt="Classic waffle" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کیک کدو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">238000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/doublechoc.webp" alt="Ice cream waffle" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کیک دبل چاکلت</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">238000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/blueberry-muffin.WebP" alt="Blueberry Muffin" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Soft and moist muffin packed with fresh blueberries, offering a sweet and tender treat.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/chocolate-chip-cookie.WebP" alt="Chocolate Chip Cookie" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Chocolate Chip Cookie</h3>
+                        <p>Chewy and buttery cookie loaded with rich chocolate chips, perfect for a sweet snack.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$2.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/cinnamon-roll.WebP" alt="Cinnamon Roll" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Cinnamon Roll</h3>
+                        <p>Soft and fluffy pastry swirled with cinnamon and sugar, often topped with a sweet glaze.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$3.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/fresh_fruit_plate.WebP" alt="Fruit plate" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Fruit plate</h3>
+                        <p>Fresh assortment of seasonal fruits, carefully sliced and served for a light and refreshing treat.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$4.00</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/kunafa.WebP" alt="Kunafa" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Kunafa</h3>
+                        <p>Sweet and rich Middle Eastern dessert made with shredded pastry, layered with cheese or cream, and soaked in fragrant syrup.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$5.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/kunafa-ice-cream.WebP" alt="Kunafa Ice cream" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Kunafa ice cream</h3>
+                        <p>Creamy ice cream served with shredded pastry and sweet syrup, combining the classic flavors of kunafa in a chilled dessert.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$6.00</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/Ice-cream-cake.WebP" alt="Ice cream cake" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Ice cream cake</h3>
+                        <p>Layered dessert combining creamy ice cream and cake, often topped with chocolate, fruits, or whipped cream.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$6.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="coffee">
+                    <img src="assets/Chocolate-cake.WebP" alt="Chocolate cake" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>Chocolate cake</h3>
+                        <p>Moist and rich chocolate cake layered with smooth chocolate frosting, perfect for a decadent dessert.</p>
+                        <div class="menu-item-footer">
+                            <span class="price">$5.50</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Breakfast Items -->
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/coupletea.webp" alt="Iranian breakfast" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای سیاه کلاسیک (دونفره)</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">206000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/torsh.webp" alt="چای کرک" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای ترش</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">193000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/greentea.webp" alt="Pomodora breakfast" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای سبز</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">191000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/whitetea.webp" alt="American breakfast" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای سفید</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">263000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/english-breakfast.WebP" alt="چایی کرک" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای کرک</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">195000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/masala_tea.WebP" alt="Meat Lovers" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>چای ماسالا</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">195000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/rose.webp" alt="Boricuas" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش لاله</h3>
+                        <p>به لیمو / هل / کاکوتی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">225000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/Guacamole-omelette.WebP" alt="دمنوش سبزه" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش سبزه</h3>
+                        <p>چای سبز / پرتغال خشک / زعفران</p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/French-test.WebP" alt="دمنوش گل نوش" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش گل نوش</h3>
+                        <p>توت فرنگی خشک / چای سیاه / چای ترش</p>
+                        <div class="menu-item-footer">
+                            <span class="price">249000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/Breakfast-chilaquiles.WebP" alt="دمنوش زنبق" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش زنبق</h3>
+                        <p>آویشن کوهی / دارچین / زنجبیل</p>
+                        <div class="menu-item-footer">
+                            <span class="price">225000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/Breakfast-chilaquiles.WebP" alt="دمنوش درنا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش درنا</h3>
+                        <p>چای ترش / گل گاو زبان / فندق</p>
+                        <div class="menu-item-footer">
+                            <span class="price">249000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/Breakfast-chilaquiles.WebP" alt="دمنوش آرامش" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش آرامش</h3>
+                        <p>گل گاوزبان / سنبل الطیب / لیمو عمانی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="menu-item animate-on-scroll" data-category="breakfast">
+                    <img src="assets/Breakfast-chilaquiles.WebP" alt="دمنوش نشاط" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>دمنوش نشاط</h3>
+                        <p>هل / بهارنارنج / گل محمدی / دارچین</p>
+                        <div class="menu-item-footer">
+                            <span class="price">225000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Items -->
+                 <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Shredded-kebab.WebP" alt="ونداد" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>ونداد</h3>
+                        <p>بهار نارنج / پرتغال / سرددم چای ترش</p>
+                        <div class="menu-item-footer">
+                            <span class="price">252000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Grilled-chicken.WebP" alt="نیلاس" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>نیلاس</h3>
+                        <p>بیدمشک / آناناس / سرددم لیمو</p>
+                        <div class="menu-item-footer">
+                            <span class="price">252000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/rice.WebP" alt="مانابه" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>مانابه</h3>
+                        <p>گل محمدی / توت فرنگی / هل</p>
+                        <div class="menu-item-footer">
+                            <span class="price">257000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Grilled-chicken-breast.WebP" alt="لیوسا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>لیوسا</h3>
+                        <p>زعفران / آلوورا / سرددم گل ختمی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">252000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Sour-Chicken.WebP" alt="فریان" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>فریان</h3>
+                        <p>سیب / زیره / بادیان ستاره ای</p>
+                        <div class="menu-item-footer">
+                            <span class="price">257000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Classic-hamburger.WebP" alt="کیهان" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>کیهان</h3>
+                        <p>سکنجبین / لیمو</p>
+                        <div class="menu-item-footer">
+                            <span class="price">257000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/nutellashake.webp" alt="Hot Dog" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک نوتلا</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">276000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/peanutshake.webp" alt="Classic fries" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک بادام زمینی</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">276000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/mangoshake.webp" alt="Beef fries" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک انبه</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">276000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/bananashake.webp" alt="Roast Beef Panini" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک موز</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/cookieshake.webp" alt="Breaded fillet plate" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک کوکی</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/coffeshake.webp" alt="Steak" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک قهوه</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">298000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/caramelma.webp" alt="Vegetable pizza" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک کارامل</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/vanillashake.webp" alt="Meat and mushroom pizza" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک وانیل</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/chocolateandbanana.webp" alt="Chicken Pesto Pizza" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>شیک موز وشکلات</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">298000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Pepperoni-pizza.WebP" alt="بستنی درنا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>بستنی درنا</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">252000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Margherita-pizza.WebP" alt="آیدان" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>آیدان</h3>
+                        <p>توت فرنگی / شیر / بادیان ستاره ای / زردآلو</p>
+                        <div class="menu-item-footer">
+                            <span class="price">203000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Garlic-Steak-Pizza.WebP" alt="راشر" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>راشر</h3>
+                        <p>سیب / آناناس / بلوبری</p>
+                        <div class="menu-item-footer">
+                            <span class="price">203000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Pot-Roast-Pizzas.WebP" alt="هاوین" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>هاوین</h3>
+                        <p>پرتغال / شیر / نارگیل / پشن فروت</p>
+                        <div class="menu-item-footer">
+                            <span class="price">211000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/limonad.webp" alt="Lasagna" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>لیموناد</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">163000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/mohito.webp" alt="Chicken Alfredo" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>موهیتو</h3>
+                        <p></p>
+                        <div class="menu-item-footer">
+                            <span class="price">176000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Beef-Alfredo.WebP" alt="پیناکولادا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>پیناکولادا</h3>
+                        <p>آناناس / نارگیل</p>
+                        <div class="menu-item-footer">
+                            <span class="price">244000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Chicken-pesto.WebP" alt="لیلی" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>لیلی</h3>
+                        <p>سیب / آناناس / بلوکارسانو</p>
+                        <div class="menu-item-footer">
+                            <span class="price">231000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Soup.WebP" alt="هور" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>هور</h3>
+                        <p>زرشک آلبالو / شاتوت / توت فرنگی / رزبری</p>
+                        <div class="menu-item-footer">
+                            <span class="price">282000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="مارتیا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>مارتیا</h3>
+                        <p>آناناس / موز / پرتغال / سیب سبز / بستنی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">261000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="گلنوش" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>گلنوش</h3>
+                        <p>نارگیل / انبه / کره بادام زمینی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">252000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="ماهرخ" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>ماهرخ</h3>
+                        <p>توت فرنگی / انبه / آلبالو / شاتوت</p>
+                        <div class="menu-item-footer">
+                            <span class="price">292000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="ترش درنا" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>ترش درنا</h3>
+                        <p>زرشک / کرن بری / آلبالو / شاتوت</p>
+                        <div class="menu-item-footer">
+                            <span class="price">292000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="پرهام" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>پرهام</h3>
+                        <p>زردآلو / انبه / ریحون</p>
+                        <div class="menu-item-footer">
+                            <span class="price">236000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="سوین" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>سوین</h3>
+                        <p>هندوانه / پرتغال / نعنا</p>
+                        <div class="menu-item-footer">
+                            <span class="price">222000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <div class="menu-item animate-on-scroll" data-category="restaurant">
+                    <img src="assets/Salad.WebP" alt="بهدیس" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <h3>بهدیس</h3>
+                        <p>زرشک / آلبالو / شاتوت / توت فرنگی</p>
+                        <div class="menu-item-footer">
+                            <span class="price">236000</span>
+                            <button
+                            class="add-to-cart-btn"
+                            aria-label="افزودن به سبد خرید">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer id="contact" class="site-footer animate-on-scroll">
+        <div class="footer-content">
+        <h2 class="logo">دوست عزیز درنایی</h2>
+        <p>خوشحال میشیم نظرات و پیشنهادات خود را با ما در میان بگذارید</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+                <a href="https://www.instagram.com/dornacaffe?igsh=MWJIZGRzcDV5OGN3Mw==" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#" target="_blank" class="social-btn"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="social-btn"><i class="fas fa-globe"></i></a> -->
+            </div>
+
+        <p class="copyright">
+    تاسیس پاییز 1403 | 
+    <a href="https://shadrouh.ir/" target="_blank" class="animated-name">کافه کتاب درنا</a>
+        </p>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+</body>
+</html>
+
+
